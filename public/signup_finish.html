@@ -1,0 +1,195 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Outfit', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
+}
+body{
+    background-color: black;
+    font-family: 'Outfit', sans-serif;;
+}
+
+           /* ===================LEFT IMAGE======================== */
+
+.image{
+    position: absolute;
+    height: 100%;
+    width: 68%;
+    left: 605px;
+}
+
+nav{
+    padding: 30px;
+    color: white;
+    position: absolute;
+
+}
+.Text{
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 120px;
+
+}
+.navigation{
+    display: flex;
+}
+.navigation .help-anchor{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navigation .btnsign-popup{
+
+width: 130px;
+height: 50px;
+background: transparent;
+border: none;
+outline: none;
+border-radius:6px ;
+cursor: pointer;
+font-size: 1.1em;
+color: #fff;
+font-weight: 500;
+/* margin-right: 800px; */
+margin-bottom: 42rem;
+transition: .5s;
+backdrop-filter: blur(20px);
+display: flex;
+align-items: center;
+gap: 5px;
+
+
+}
+
+.help-anchor{
+ display: flex;
+ gap: 10px ;
+}
+.navigation .btnsign-popup:hover{
+ background: #fff;
+ color: #162916;
+
+}
+p{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#vector{
+    position: absolute;
+    height: 200px;
+    width: 280px;
+    margin-left: -120px;
+    margin-top: 20rem;
+}
+
+button{
+    position: absolute;
+    display: flex;
+    width: 450px;
+    padding: 17px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 61px;
+    background: #FC08C7;
+    color: white;
+    font-size: 20px;
+    bottom: -650px;
+    right: -100px;
+    font-weight: 10;
+} 
+button:hover{
+    color: #FC08C7;
+    background-color: black;
+}
+
+.icons{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 100px;
+    padding: 40;
+    margin-left: 470px;
+
+}
+
+
+
+
+#special-one{
+    right: 630px;
+    position: relative;
+    /* margin-right: 800px; */
+    z-index: 40;
+}
+
+article{
+    position: absolute;
+    color: white;
+    margin-left: 550px;
+    margin-top: 46;
+
+}
+.logo{
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 3em;
+    color: #fff;
+    user-select: none;
+}
+
+#artcl_2{
+    margin-left: 675px;
+}
+</style>
+<body>
+    <nav>
+        <a href="./homepage.html" style="text-decoration: none;"><h2 class="logo">Tour<span style="color: #FC08C7;">Site</span></h2></a>
+    </nav>
+    <div class="photo">
+        <img class="image" src="./may.jpg" alt="Wallpaper">
+    </div>
+    
+    <div class="Text">
+        <p>
+            Done with creating your <br>
+            account of Toursite
+        </p>
+
+          
+
+        <img src="./undraw_travel_mode_re_2lxo 1.png" alt="" id="vector">
+
+
+            
+
+        <a href="/loginpage"><button>Get started</button></a>
+
+    </div>
+    <div class="icons">
+        <nav class="navigation">
+            <a class="help-anchor" href="#"><img src="./IMG-20230725-WA0005.jpg" style="border-radius: 15px;" alt="No-img">help</a>
+           <a href="./loginpage" style="text-decoration: none;"><button class="btnsign-popup">  <img src="./IMG-20230725-WA0006.jpg" style="border-radius: 15px;" alt="No-img">Login</button></a> 
+        </nav>
+    </div>
+</body>
+
+</html>

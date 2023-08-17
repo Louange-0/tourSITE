@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include your head content here -->
+</head>
+<style>
+          @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Inter:wght@300&family=PT+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.sub-container{
+    background-color: #0C0C0C;
+    width: 100%;
+    height: 62.5px;
+    font-family: Inter-Regular, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+.sub-container h1{
+
+    width: 52.5px;
+    height: 30px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 14.375px;
+    left: 62.5px;
+    font-size: 25px;
+}
+.sub-container h1 span{
+  color:#fc08c7;
+}
+.a1{
+    width: 40.25px;
+    font-size: 15.625px;
+    height: 18.75px;
+    position: absolute;
+    top: 21.875px;
+    left: 406.5px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+.a2{
+    width: 71.25px;
+    font-size: 15.625px;
+    height: 18.75px;
+    position: absolute;
+    top: 21.875px;
+    left: 481.25px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.a3{
+    width: 61.25px;
+    font-size: 15.625px;
+    height: 18.75px;
+    position: absolute;
+    top: 21.875px;
+    left: 581.25px;
+    color: #FFFFFF;
+    text-decoration: none; 
+}
+.a4{
+    width: 61.25px;
+    font-size: 15.625px;
+    height: 18.75px;
+    position: absolute;
+    top: 21.875px;
+    left: 671.25px;
+    color: #FFFFFF;
+    text-decoration: none; 
+}
+a5{
+   
+  background-color: #000000;
+  border: 1px solid;
+  border-color: #161515;
+  border-radius: 10px;
+  height: 31.25px;
+  left: 956.26px;
+  position: absolute;
+  top: 15.625px;
+  width: 75px;
+} 
+.b1{
+   
+  background-color: #000000;
+  border: 1px solid;
+  border-color: #161515;
+  border-radius: 10px;
+  height: 31.25px;
+  left: 956.25px;
+  position: absolute;
+  top: 15.625px;
+  width: 75px;
+  color: #FFFFFF;
+  font-size: 15.625px;
+  box-shadow: 2px 2px 2px 2px #fc08c7;
+}
+.b1:hover{
+   
+  background-color:#fc08c7;
+  color: #0C0C0C;
+  box-shadow: none;
+}
+.b2{
+  background-color: #000000;
+  border: 1px solid;
+  border-color: #161515;
+  border-radius: 10px;
+  height: 31.25px;
+  left: 1062.5px;
+  position: absolute;
+  top: 15.625px;
+  width: 75px;
+  color: #FFFFFF;
+  font-size: 15.625px;
+  box-shadow: 2px 2px 2px 2px #fc08c7;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+a:hover{
+    color: black;
+  
+}
+.b2:hover{
+   
+  background-color:#fc08c7;
+  color: #0C0C0C;
+  box-shadow: none;
+}
+menu{
+/* font-size: 1.5625rem;
+font-style: normal;
+font-weight: 400; */
+list-style-type:none;
+display: flex;
+gap: 5em;
+}
+.header button{
+width: 7em;
+height: 3em;
+/* width: 14.375rem;
+height: 4.375rem; */
+border: none;
+border-radius: 0.625rem;
+background-color:rgba(255, 71, 215, 0.76);
+/* font-size: 1.875rem;
+font-style: normal;
+font-weight: 400; */
+/* background-color: linear-gradient(180deg, #FF07C9 0%, rgba(255, 71, 215, 0.76) 100%);  */
+}
+h1{
+/* font-size: 3.75rem;
+font-style: normal;
+font-weight: 400; */
+    text-align: center;
+    color: white;
+}
+span{
+    color:#FC08C7;
+}
+.bookingInfo{
+    border-radius: 0.9375rem;
+    border: 5px solid #FFF;
+    width: 60%;
+    /* width: 70%; */
+    margin: 0em auto;
+    display: flex;
+    flex-direction: column;
+   gap: 3em;
+   /* font-size: 2.1875rem;
+font-style: normal;
+font-weight: 400; */
+}
+.tittle{
+    padding: 12px;
+    color: white;
+    text-align: center;
+    border-bottom: 3px solid #FFF;
+}
+.tittle h4{
+    padding-bottom:12px ;
+    color: #FC08C7;
+}
+.last{
+     padding: 12px;
+    text-align: right;
+    border-top: 3px solid #FFF;
+}
+.last button{
+background-color: rgba(255, 71, 215, 0.76);
+border: none;
+border-radius: 0.625rem;
+height: 3em;
+width:12em;
+/* font-size: 1.875rem;
+font-style: normal;
+font-weight: 400; */
+/* width: 21.875rem;
+height: 5rem; */
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: white;
+}
+.information div{
+    width: 70%;
+    margin: 12px auto;
+    display: flex;
+    gap: 10em;
+}
+.information div p{
+    display: inline;
+    padding-bottom:1em ;
+    float: left;
+    text-align: center;
+    width: 15em;
+    border-bottom: 2px solid white;
+}
+.information div h4{
+ 
+    width:10em;
+    color: #FC08C7;
+    text-align: center;
+    float: left;
+}
+
+.info>div{
+    margin-left: 12vw;
+    background-color: #080808;
+    margin-top: 5vh;
+    left: 1vh;
+}
+.info{
+    display: flex;
+    height: 33vh;
+    width: 100vw;
+    background-color: #080808;
+    color: white;
+}
+.info-1>ul>li{
+    background-color: #080808;
+    /* margin-top: 1vh; */
+}
+.info-1>ul,.info-1>h4{
+    background-color: #080808;
+    list-style: none;
+}
+form.here{
+    margin-top: 3vh;
+    background-color: #080808;
+}
+select.there{
+    margin-bottom: 2vh;
+    background-color: white;
+    color: black;
+    height: 4vh;
+    width: 10vw;
+    border-radius: 5px;
+}
+option{
+    color: black;
+}
+
+
+footer{
+ display: flex;
+flex-direction: row;
+height: 8vh;
+justify-content: space-between;
+color: white;
+}
+footer>div{
+    margin: 1vh 1vw;
+}
+select{
+    /* background-color: grey; */
+    color: #080808;
+}
+input{
+    color:black ;
+}
+</style>
+<body>
+    <div class="sub-container">
+        <a href="/"><h1>Tour<span>Site</span></h1></a>
+        <a class="a1" href="/">Home</a>
+        <a class="a2" href="/about">About Us</a>
+        <a class="a3" href="/contact">Contact</a>
+        <a class="a4" href="/booking">Booking</a>
+        
+        <a  href="/loginpage" class="a5">
+            <button class="b1">Login</button>
+        </a>
+        <a class="a6" href="/signup">
+            <button class="b2">Sign Up</button>
+        </a>
+    </div>
+    <h1>Check <span>information</span> about latest <span>booking</span></h1>
+ 
+    <div class="bookingInfo">
+     <div class="tittle">
+         <h4>Your Ticket</h4>
+         <p>below shows all information about your booking</p>
+     </div>
+   <div class="information">
+     <div>
+         <h4>name</h4>
+         <p id="name"></p>
+     </div>
+     <div>
+         <h4>site to visit</h4>
+         <p id="place"></p>
+     </div>
+     <div>
+         <h4>Hotel</h4>
+         <p id="hotel"></p>
+     </div>
+     <div>
+         <h4>Number of peaople</h4>
+         <p id="number"></p>
+     </div>
+      <div>
+         <h4>Room type</h4>
+         <p id="room"></p>
+     </div>
+     <div>
+         <h4>Start Date</h4>
+         <p id="start"></p>
+     </div>
+     <div>
+         <h4>End date</h4>
+         <p id="end"></p>
+     </div>
+ 
+   </div>
+   <div class="last"><button><a href="homepage.html">Back to Home page</a></button></div>
+    </div>
+ 
+    <div class="info">
+        <div class="info-1">
+            <h4>Hotels</h4>
+            <ul>
+                <li>Mariot hotel</li>
+                <li>Hotel name</li>
+                <li>Hotel name</li>
+                <li>Hotel name</li>
+                <li>Hotel name</li>
+                <li>Hotel name</li>
+                <li>Hotel name</li>
+                <li>Hotel name</li>
+                <li>Hotel name</li>
+                <li>Hotel name</li>
+            </ul>
+        </div>
+        <div class="info-1">
+            <h4>Sites</h4>
+            <ul>
+                <li>Volcano National ParkParis at Huye</li>
+                <li>Rususmo water fall</li>
+                <li>Akagera National Park</li>
+                <li>Nyungwe Forest</li>
+                <li>Gishwati Forest</li>
+                <li>Lake Kivu</li>
+                <li>Genocide Memorial Sites</li>
+                <li>Ministries</li>
+                <li>Offices</li>
+            </ul>
+        </div>
+        <div class="info-1">
+            <h4>Cities</h4>
+            <ul>
+                <li>Kigali</li>
+                <li>Huye</li>
+                <li>Nyagatare</li>
+                <li>Muhanga</li>
+                <li>Musanze</li>
+                <li>Rwamagana</li>
+            </ul>
+        </div>
+        <div class="info-1">
+            <form class="here" action="#">
+                <label for="language">
+                    <select name="language" id="language" class="there">
+                        <option value="lang">Language</option>
+                        <option value="french">French</option>
+                        <option value="English">english</option>
+                        <option value="kinya">Kinyarwanda</option>
+                    </select>
+                </label>
+                <br>
+                <label for="payment">
+                    <select name="payment" id="payment" class="there">
+                    <option value="paypal">PayPal</option>
+                    <option value="credit">Credit card</option>
+                    <option value="master">Master Card</option>
+                    <option value="visa">Visa</option>
+                </select>
+                </label>
+            </form>
+        </div>
+    </div>
+  
+    <footer>
+        <div class="footer">
+            <p>&copy;2023 HK Limited Toursite</p>
+            
+        </div>
+        <div class="footer-image">
+            <img src="./Screenshot 2023-07-25 060644.png" alt="">
+            <img src="./Screenshot 2023-07-25 060659.png" alt="">
+            <img src="./Screenshot 2023-07-25 060719.png" alt="">
+            <img src="./Screenshot 2023-07-25 060732.png" alt="">
+        </div>
+    </footer>
+     
+ </body>
+
+    <script>
+        const name=localStorage.getItem('name')
+        const hotel=localStorage.getItem('hotel')
+        const place=localStorage.getItem('place')
+        const room=localStorage.getItem('room')  
+        const number=localStorage.getItem('number')
+        const start=localStorage.getItem('start')
+        const end=localStorage.getItem('end')
+
+        document.getElementById('name').textContent=name;
+        document.getElementById('place').textContent=place;
+        document.getElementById('hotel').textContent=hotel;
+        document.getElementById('room').textContent=room;
+        document.getElementById('number').textContent=number;
+        document.getElementById('start').textContent=start;
+        document.getElementById('end').textContent=end;
+
+        function logout() {
+            // Clear user-related data from local storage
+            localStorage.removeItem('name');
+            localStorage.removeItem('hotel');
+            localStorage.removeItem('place');
+            localStorage.removeItem('room');
+            localStorage.removeItem('number');
+            localStorage.removeItem('start');
+            localStorage.removeItem('end');
+            
+
+             // Redirect to the main page
+             window.location.href = "/"; 
+            // Display a logout success alert
+            alert("You have successfully logged out.");
+
+           
+        }
+
+        // Attach the function to the Logout button's click event
+        const logoutButton = document.querySelector('.logout-button');
+        logoutButton.addEventListener('click', logout);
+    </script>
+</html>

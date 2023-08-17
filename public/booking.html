@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Tourism
+    </title>
+    <script src="https://kit.fontawesome.com/df16c62f54.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<style>
+       @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Inter:wght@300&family=PT+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.sub-container{
+    background-color: #0C0C0C;
+    width: 100%;
+    height: 62.5px;
+    font-family: Inter-Regular, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+.sub-container h1{
+
+    width: 52.5px;
+    height: 30px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 14.375px;
+    left: 62.5px;
+    font-size: 25px;
+}
+.sub-container h1 span{
+  color:#fc08c7;
+}
+.a1{
+    width: 40.25px;
+    font-size: 15.625px;
+    height: 18.75px;
+    position: absolute;
+    top: 21.875px;
+    left: 406.5px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+.a2{
+    width: 71.25px;
+    font-size: 15.625px;
+    height: 18.75px;
+    position: absolute;
+    top: 21.875px;
+    left: 481.25px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.a3{
+    width: 61.25px;
+    font-size: 15.625px;
+    height: 18.75px;
+    position: absolute;
+    top: 21.875px;
+    left: 581.25px;
+    color: #ffffff;
+    text-decoration: none; 
+}
+.a4{
+    width: 61.25px;
+    font-size: 15.625px;
+    height: 18.75px;
+    position: absolute;
+    top: 21.875px;
+    left: 671.25px;
+    color: #fc08c7;
+    text-decoration: none; 
+}
+a5{
+   
+  background-color: #000000;
+  border: 1px solid;
+  border-color: #161515;
+  border-radius: 10px;
+  height: 31.25px;
+  left: 956.26px;
+  position: absolute;
+  top: 15.625px;
+  width: 75px;
+} 
+.b1{
+   
+  background-color: #000000;
+  border: 1px solid;
+  border-color: #161515;
+  border-radius: 10px;
+  height: 31.25px;
+  left: 956.25px;
+  position: absolute;
+  top: 15.625px;
+  width: 75px;
+  color: #FFFFFF;
+  font-size: 15.625px;
+  box-shadow: 2px 2px 2px 2px #fc08c7;
+}
+.b1:hover{
+   
+  background-color:#fc08c7;
+  color: #0C0C0C;
+  box-shadow: none;
+}
+.b2{
+  background-color: #000000;
+  border: 1px solid;
+  border-color: #161515;
+  border-radius: 10px;
+  height: 31.25px;
+  left: 1062.5px;
+  position: absolute;
+  top: 15.625px;
+  width: 75px;
+  color: #FFFFFF;
+  font-size: 15.625px;
+  box-shadow: 2px 2px 2px 2px #fc08c7;
+}
+.b2:hover{
+   
+  background-color:#fc08c7;
+  color: #0C0C0C;
+  box-shadow: none;
+}
+    .container{
+        /* width: 100vw; */
+        background-color: black;
+        color: white;
+        overflow: hidden;
+    }
+    
+    .content{
+        height: 80%;
+    }
+    .slogan{
+       color: white; 
+       font-size: 2em;
+       font-family: 'Inria Sans',sans-serif;
+       text-align: center;
+       font-weight: lighter;
+       margin-top: 2em;
+    }
+    .form{
+        width: 80%;
+        text-align: center;
+        border: 2px solid white;
+        margin:  5% 10%;
+        font-family: 'Inria Sans';
+    }
+    .form h4{
+        text-align: center;
+        color: rgb(158, 11, 158);
+        font-family: 'Inria Sans',sans-serif;
+        padding: 1em;
+    }
+    .select #one,#two{
+        display: flex;
+        justify-content: space-between;
+        padding:2em 5em ; 
+        color: black;
+    }
+    .select select{
+        width: 30em;
+        margin: 1em;
+        height: 2.5em;
+        border: none;
+    }
+    .select input{
+        width: 30em;
+        height: 2.5em;
+        margin: 1em;
+        border: none;
+    }
+    
+    .select #three{
+        display: flex;
+        flex-direction: column;
+        padding:0 5em ;
+    }
+    .select button{
+        width: 10em;
+        border-radius: .5em;
+        border: none;
+        color: white;
+        background: rgb(158, 11, 158);
+        height: 3em;
+        margin: 2em;
+    }
+
+    .info>div{
+    margin-left: 12vw;
+    background-color: #080808;
+    margin-top: 3vh;
+}
+.info{
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    background-color: #080808;
+    color: white;
+}
+.info-1>ul>li{
+    background-color: #080808;
+    /* margin-top: 1vh; */
+}
+.info-1>ul,.info-1>h4{
+    background-color: #080808;
+}
+form.here{
+    margin-top: 3vh;
+    background-color: #080808;
+}
+select.there{
+    margin-bottom: 2vh;
+    background-color: white;
+    color: black;
+    height: 4vh;
+    width: 10vw;
+    border-radius: 5px;
+}
+option{
+    color: black;
+}
+
+
+footer{
+ display: flex;
+flex-direction: row;
+height: 8vh;
+justify-content: space-between;
+color: white;
+}
+footer>div{
+    margin: 1vh 1vw;
+}
+select{
+    /* background-color: grey; */
+    color: #080808;
+}
+input{
+    color:black ;
+}
+.submit:hover{
+    background-color: #0C0C0C;
+    color: #FFFFFF;
+}
+</style>
+<body>
+    <div class="sub-container">
+        <a href="/"><h1>Tour<span>Site</span></h1></a>
+        <a class="a1" href="/">Home</a>
+        <a class="a2" href="/about">About Us</a>
+        <a class="a3" href="/contact">Contact</a>
+        <a class="a4" href="/booking">Booking</a>
+        
+        <a  href="/loginpage" class="a5">
+            <button class="b1">Login</button>
+        </a>
+        <a class="a6" href="/signup">
+            <button class="b2">Sign Up</button>
+        </a>
+    </div>
+        <div class="content">
+            <h1 class="slogan">You can <span style="color: rgb(158, 11, 158);">book</span> all you need here <span style="color: rgb(158, 11, 158);">now</span></h1>
+            <div class="form">
+                <form method="post" id="bookingForm">
+                    <h4>Booking form</h4>
+                <span>Fill out this form to tell us more about your journey to help you in our services.Make sure that you send correct things to me.</span>
+                <hr style="color: white; width: 100%;">
+                <div class="select">
+                  <section id="one">
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                    <select name="hotel" id="hotel">
+                     <option value="no-repeat">Select hotel</option>
+                     <option value="Lemigo">Lemigo</option>
+                     <option value="mariot">Mariot</option>
+                     <option value="hilltop">Hilltop</option>
+                     <option value="prince">prince</option>
+                     <option value="intare">Intare</option>
+                    </select>
+                   
+                  </section>
+                  <section id="two">
+                    <select name="place" id="place">
+                        <option value="no-repeat">Select place to visit</option>
+                        <option value="Kivu">Kivu</option>
+                        <option value="Nyungwe">Nyungwe</option>
+                        <option value="Akagera">Akagera</option>
+                        <option value="virunga">Virunga</option>
+                        <option value="Muhazi">MUhazi</option>
+                       </select>
+                       <select name="room" id="room">
+                        <option value="no-repeat">Type of room</option>
+                        <option value="single">Single</option>
+                        <option value="deluxe">Deluxe</option>
+                        <option value="presidentail">Presidentail suite</option>
+                        <option value="double">Double</option>
+                       </select>
+                  </section>
+                   
+                   <!-- <hr style="color: white;"> -->
+                   <section id="three">
+                    <input type="text" placeholder="Alone or with others">
+                    <input type="number" name="number" id="number" placeholder="Number of others you will come with is any">
+                    <input type="date" name="start" id="start" placeholder="Start date" style="color: black;">
+                    <input type="date" name="end" id="end" placeholder="End date" style="color: black;">
+                   </section>
+           
+                   <button type="submit" class="submit">Book Now</button>
+                </div> 
+                </form>
+               
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-1">
+                <h4>Hotels</h4>
+                <ul>
+                    <li>Mariot hotel</li>
+                    <li>Hotel name</li>
+                    <li>Hotel name</li>
+                    <li>Hotel name</li>
+                    <li>Hotel name</li>
+                    <li>Hotel name</li>
+                    <li>Hotel name</li>
+                    <li>Hotel name</li>
+                    <li>Hotel name</li>
+                    <li>Hotel name</li>
+                </ul>
+            </div>
+            <div class="info-1">
+                <h4>Sites</h4>
+                <ul>
+                    <li>Volcano National ParkParis at Huye</li>
+                    <li>Rususmo water fall</li>
+                    <li>Akagera National Park</li>
+                    <li>Nyungwe Forest</li>
+                    <li>Gishwati Forest</li>
+                    <li>Lake Kivu</li>
+                    <li>Genocide Memorial Sites</li>
+                    <li>Ministries</li>
+                    <li>Offices</li>
+                </ul>
+            </div>
+            <div class="info-1">
+                <h4>Cities</h4>
+                <ul>
+                    <li>Kigali</li>
+                    <li>Huye</li>
+                    <li>Nyagatare</li>
+                    <li>Muhanga</li>
+                    <li>Musanze</li>
+                    <li>Rwamagana</li>
+                </ul>
+            </div>
+            <div class="info-1">
+                <form class="here" action="#">
+                    <label for="language">
+                        <select name="language" id="language" class="there">
+                            <option value="lang">Language</option>
+                            <option value="french">French</option>
+                            <option value="English">english</option>
+                            <option value="kinya">Kinyarwanda</option>
+                        </select>
+                    </label>
+                    <br>
+                    <label for="payment">
+                        <select name="payment" id="payment" class="there">
+                        <option value="paypal">PayPal</option>
+                        <option value="credit">Credit card</option>
+                        <option value="master">Master Card</option>
+                        <option value="visa">Visa</option>
+                    </select>
+                    </label>
+                </form>
+            </div>
+        </div>
+</div>
+<footer>
+    <div class="footer">
+        <p>&copy;2023 HK Limited Toursite</p>
+        
+    </div>
+    <div class="footer-image">
+        <img src="./Screenshot 2023-07-25 060644.png" alt="">
+        <img src="./Screenshot 2023-07-25 060659.png" alt="">
+        <img src="./Screenshot 2023-07-25 060719.png" alt="">
+        <img src="./Screenshot 2023-07-25 060732.png" alt="">
+    </div>
+</footer>
+<script>
+    // Fetch the form element using its ID
+    const form = document.getElementById("bookingForm");
+    const name1=document.getElementById("name")
+    const hotel=document.getElementById("hotel")
+    const place=document.getElementById("place")
+    const room=document.getElementById("room")
+    const number=document.getElementById("number")
+    const start=document.getElementById("start")
+    const end=document.getElementById("end")
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form submission
+
+
+       
+
+        // Fetch form data
+        const formData = new FormData(event.target);
+        const name = formData.get("name");
+        const hotel = formData.get("hotel");
+        const place = formData.get("place");
+        const roomtype = formData.get("room");
+        const maxGroupSize = formData.get("number");
+        const start=formData.get("start");
+        const end=formData.get("end")
+
+        localStorage.setItem('name',name);
+        localStorage.setItem('hotel',hotel);
+        localStorage.setItem('place',place);
+        localStorage.setItem('room',roomtype);
+        localStorage.setItem('number',maxGroupSize);
+        localStorage.setItem('start',start);
+        localStorage.setItem('end',end);
+
+        // Prepare the data to be sent to the API
+        const dataToSend = {
+            name: name,
+            hotel: hotel,
+            place:place,
+            roomtype:roomtype,
+            maxGroupSize:maxGroupSize,
+            start:start,
+            end:end
+        };
+
+        // Make an API request to send the data
+        fetch("http://localhost:4000/tours", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dataToSend),
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Handle the API response if needed
+            if (data.message === 'successfully created') {
+                // Display the success message to the user
+                alert('Booking successful!');
+        
+
+                // You can perform further actions here, e.g., redirect the user to another page
+                window.location.href = './form.html'}else {
+                // Handle other cases, such as incorrect login details
+                alert('Booking failed. Please try again.');
+            }
+            console.log("API Response:", data);
+            // You can perform further actions based on the API response here
+        })
+        .catch(error => {
+            // Handle errors if any
+            console.error("Error:", error);
+        });
+
+    });
+</script>
+</body>
+</html>

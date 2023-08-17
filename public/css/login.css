@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./IMG-20230725-WA0008.jpg')no-repeat;
+    background-size: cover;
+    background-position: center; 
+     
+        
+        
+
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+}
+.logo{
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 3em;
+    color: #fff;
+    user-select: none;
+}
+.navigation{
+    display: flex;
+}
+.navigation .help-anchor{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.navigation .btnsign-popup{
+
+   width: 130px;
+   height: 50px;
+   background: transparent;
+   border: none;
+   outline: none;
+   border-radius:6px ;
+   cursor: pointer;
+   font-size: 1.1em;
+   color: #fff;
+   font-weight: 500;
+   margin-right: 600px;
+   transition: .5s;
+   backdrop-filter: blur(20px);
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   
+   
+}
+
+.help-anchor{
+    display: flex;
+    gap: 3px ;
+}
+.navigation .btnsign-popup:hover{
+    background: #fff;
+    color: #162916;
+
+}
+.wrapper{
+    color: #ffffff;
+    position: static;
+    width: 750px;
+    height: 790px;
+    background: black;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    /* border-radius: 20px; */
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex   ;
+    justify-content: left;
+    align-items: center ;  
+    padding: 100px 100px; 
+
+}
+.input-box{
+    position: relative;
+    top: 90%;
+    width: 130%;
+    height: 50px;
+    border-bottom:2px solid black ;
+    margin:  30px 0px 30px;
+}
+
+.input-box label{
+
+    position: absolute;
+    top: -100%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -90px;
+}
+ 
+.input-box input{
+    position: absolute;
+    top: -150%;
+    width: 243%;
+    height: 100%;
+    background: black;
+    color: white;
+    border: 2px solid beige;
+    border-radius: 50px;
+    font-size: 1em;
+    color: gray;
+    font-weight: 600;
+    padding: 0 18px 0 ;
+
+    
+    
+}
+
+
+.form-box h2{
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    height: 200px;
+    
+    
+
+
+}
+.btn{
+    width: 315%;
+    height: 100%;
+    padding: 10px;
+    background:  #FC08C7;
+    color: #fff;
+    border: 2px solid gray;
+    border-radius: 50px;
+    outline: none;
+}
+

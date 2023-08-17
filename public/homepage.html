@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <title>Home</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Inter:wght@300&family=PT+Sans&display=swap');
+*{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.sub-container{
+    background-color: #0C0C0C;
+    width: 100%;
+    height: 62.5px;
+    font-family: Inter-Regular, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+.sub-container h1{
+
+    color: #FFFFFF;
+    position: absolute;
+    top: 14.375px;
+    left: 62.5px;
+    background: #0C0C0C;
+  
+    font-size: 25px;
+}
+.sub-container h1 span{
+    color:#fc08c7;
+    background-color: #0C0C0C;
+}
+
+
+.sub-container a h1{
+
+    width: 100px;
+    height: 30px;
+    background-color: #0C0C0C;
+}
+.a1{
+    width: 40.25px;
+    font-size: 15.625px;
+    height: 18.75px;
+    position: absolute;
+    top: 21.875px;
+    left: 406.5px;
+    color:#fc08c7;
+    text-decoration: none;
+    background: #0C0C0C;
+}
+.a2{
+    width: 71.25px;
+    font-size: 15.625px;
+    height: 18.75px;
+    position: absolute;
+    top: 21.875px;
+    left: 481.25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #0C0C0C;
+}
+.a3{
+    width: 61.25px;
+    font-size: 15.625px;
+    height: 18.75px;
+    position: absolute;
+    top: 21.875px;
+    left: 581.25px;
+    color: #FFFFFF;
+    text-decoration: none; 
+    background: #0C0C0C;
+}
+.a4{
+    width: 61.25px;
+    font-size: 15.625px;
+    height: 18.75px;
+    position: absolute;
+    top: 21.875px;
+    left: 671.25px;
+    color: #FFFFFF;
+    text-decoration: none; 
+    background: #0C0C0C;
+}
+a5{
+   
+    background: #0C0C0C;
+  border: 1px solid;
+  border-color: #161515;
+  border-radius: 10px;
+  height: 31.25px;
+  left: 956.26px;
+  position: absolute;
+  top: 15.625px;
+  width: 75px;
+
+} 
+
+.b1{
+   
+  background-color: #000000;
+  border: 1px solid;
+  border-color: #161515;
+  border-radius: 10px;
+  height: 31.25px;
+  left: 956.25px;
+  position: absolute;
+  top: 15.625px;
+  width: 75px;
+  color: #FFFFFF;
+  font-size: 15.625px;
+  box-shadow:2px  2px 2px 2px #fc08c7;
+}
+.b1:hover{
+   
+    background-color:#fc08c7;
+    color: #0C0C0C;
+    box-shadow: none;
+  }
+.b2{
+  background-color: #000000;
+  border: 1px solid;
+  border-color: #161515;
+  border-radius: 10px;
+  height: 31.25px;
+  left: 1062.5px;
+  position: absolute;
+  top: 15.625px;
+  width: 75px;
+  color: #FFFFFF;
+  font-size: 15.625px;
+  box-shadow: 2px 2px 2px 2px #fc08c7;
+}
+.b2:hover{
+    background-color:#fc08c7;
+    color: #0C0C0C; 
+    box-shadow: none;  
+}
+.welcome{
+    margin: 10vh 12vw;
+}
+.welcome-h1{
+    color: #fc08c7;
+}
+.get-started{
+    margin-top: 3vh;
+    height: 5vh;
+    width: 14vw;
+    border: none;
+    background-color: #fc08c7;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.places{
+    margin:-1vh 12.5vw;
+}
+.to-visit{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.to-visit>div{
+    margin-right: 7vw;
+    margin-top: 5vh;
+    height: 55vh;
+    width: 17vw;
+    background-color: #080808;
+    border-radius: 20px;
+    border: 1px solid #161616;
+}
+.type-1{
+    height: 20vh;
+    width: 15vw;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 2vh 1vw;
+}
+.description{
+    background-color: #080808;
+    margin-left: 1vw;
+}
+.type-2{
+    object-fit: cover;
+    height: 3vh;
+
+}
+caption{
+    margin-right: 6vw;
+}
+.dp{
+    font-size: 0.85em;
+    background-color: #080808;
+}
+.dp2{
+    margin-top: 1vh;
+    background-color: #080808;
+}
+.dp2>span,.description>h4{
+    color: #29d9d5ff;
+}
+.description>button{
+    height: 3.5vh;
+    width: 5vw;
+    margin-top: 1.5vh;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.description>h4{
+    background-color: #080808;
+}
+.load{
+    margin: 4vh 39vw;
+}
+
+.info>div{
+    margin-left: 13vw;
+    background-color: #080808;
+    margin-top: 3vh;
+}
+.info{
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    background-color: #080808;
+}
+.info-1>ul>li{
+    background-color: #080808;
+    margin-top: 1vh;
+}
+.info-1>ul,.info-1>h4{
+    background-color: #080808;
+}
+form{
+    margin-top: 3vh;
+    background-color: #080808;
+}
+select{
+    margin-bottom: 2vh;
+    background-color: white;
+    color: black;
+    height: 4vh;
+    width: 10vw;
+    border-radius: 5px;
+}
+
+footer{
+ display: flex;
+flex-direction: row;
+height: 8vh;
+justify-content: space-between;
+}
+footer>div{
+    margin: 1vh 1vw;
+}
+
+
+</style>
+<body>
+    <div class="main">
+        <div class="sub-container">
+            <a href="/"><h1>Tour<span>Site</span></h1></a>
+            <a class="a1" href="/">Home</a>
+            <a class="a2" href="/about">About Us</a>
+            <a class="a3" href="/contact">Contact</a>
+            <a class="a4" href="/booking">Booking</a>
+            
+            <a  href="/loginpage" class="a5">
+                <button class="b1">Login</button>
+            </a>
+            <a class="a6" href="/signup">
+                <button class="b2">Sign Up</button>
+            </a>
+        </div>
+        <div class="welcome">
+            <h1>Welcome to <br><span class="welcome-h1">Toursite</span></h1>
+            <br>
+            <p>This is a tourisn service providing platform that will be used to <br> monitor, control and be used by the tourists  to get different services <br> accordingly, Wish you save journey.</p>
+            <a href="/signup"><button class="get-started">Get started</button></a>
+        </div>
+
+        <div class="places">
+        <h4>Places to visit</h4>
+        <div class="to-visit">
+            <div>
+                <img src="./Screenshot 2023-07-24 214435.png" alt="" class="type-1">
+                <div class="description">
+                    <h4>Hotel name</h4><br>
+                    <p class="dp">This hotel is located in Rwanda - Kigali City. <br> It very good with handling customers.</p>
+                    <img src="./Screenshot 2023-07-24 214503.png" alt="" class="type-2">
+                    <caption>350 K</caption>&nbsp;&nbsp;&nbsp;
+                    <img src="./Screenshot 2023-07-24 214518.png" alt="" class="type-2">
+                    <caption>350 K</caption>
+                    <p class="dp2"><span>100+</span> visited last week</p>
+                    <button>Visit</button>
+                </div>
+            </div>
+            <div>
+                <img src="./Screenshot 2023-07-24 214606.png" alt="" class="type-1">
+                <div class="description">
+                    <h4>Hotel name</h4><br>
+                    <p class="dp">This hotel is located in Rwanda - Kigali City. <br> It very good with handling customers.</p>
+                    <img src="./Screenshot 2023-07-24 214503.png" alt="" class="type-2">
+                    <caption>350 K</caption>&nbsp;&nbsp;&nbsp;
+                    <img src="./Screenshot 2023-07-24 214518.png" alt="" class="type-2">
+                    <caption>350 K</caption>
+                    <p class="dp2"><span>100+</span> visited last week</p>
+                    <button>Visit</button>
+                </div>
+            </div>
+            <div>
+                <img src="./Screenshot 2023-07-24 214537.png" alt="" class="type-1">
+                <div class="description">
+                    <h4>Hotel name</h4><br>
+                    <p class="dp">This hotel is located in Rwanda - Kigali City. <br> It very good with handling customers.</p>
+                    <img src="./Screenshot 2023-07-24 214503.png" alt="" class="type-2">
+                    <caption>350 K</caption>&nbsp;&nbsp;&nbsp;
+                    <img src="./Screenshot 2023-07-24 214518.png" alt="" class="type-2">
+                    <caption>350 K</caption>
+                    <p class="dp2"><span>100+</span> visited last week</p>
+                    <button>Visit</button>
+                </div>
+            </div>
+            <div>
+                <img src="./Screenshot 2023-07-24 214632.png" alt="" class="type-1">
+                <div class="description">
+                    <h4>Hotel name</h4><br>
+                    <p class="dp">This hotel is located in Rwanda - Kigali City. <br> It very good with handling customers.</p>
+                    <img src="./Screenshot 2023-07-24 214503.png" alt="" class="type-2">
+                    <caption>350 K</caption>&nbsp;&nbsp;&nbsp;
+                    <img src="./Screenshot 2023-07-24 214518.png" alt="" class="type-2">
+                    <caption>350 K</caption>
+                    <p class="dp2"><span>100+</span> visited last week</p>
+                    <button>Visit</button>
+                </div>
+            </div>
+            <div>
+                <img src="./Screenshot 2023-07-24 214651.png" alt="" class="type-1">
+                <div class="description">
+                    <h4>Hotel name</h4><br>
+                    <p class="dp">This hotel is located in Rwanda - Kigali City. <br> It very good with handling customers.</p>
+                    <img src="./Screenshot 2023-07-24 214503.png" alt="" class="type-2">
+                    <caption>350 K</caption>&nbsp;&nbsp;&nbsp;
+                    <img src="./Screenshot 2023-07-24 214518.png" alt="" class="type-2">
+                    <caption>350 K</caption>
+                    <p class="dp2"><span>100+</span> visited last week</p>
+                    <button>Visit</button>
+                </div>
+            </div>
+            <div>
+                <img src="./Screenshot 2023-07-24 214716.png" alt="" class="type-1">
+                <div class="description">
+                    <h4>Hotel name</h4><br>
+                    <p class="dp">This hotel is located in Rwanda - Kigali City. <br> It very good with handling customers.</p>
+                    <img src="./Screenshot 2023-07-24 214503.png" alt="" class="type-2">
+                    <caption>350 K</caption>&nbsp;&nbsp;&nbsp;
+                    <img src="./Screenshot 2023-07-24 214518.png" alt="" class="type-2">
+                    <caption>350 K</caption>
+                    <p class="dp2"><span>100+</span> visited last week</p>
+                    <button>Visit</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="load">
+            <button class="get-started">Load more</button>
+        </div>
+
+        <div class="places">
+            <h4>Recommended Hotels</h4>
+            <div class="to-visit">
+                <div>
+                    <img src="./Screenshot 2023-07-24 214740.png" alt="" class="type-1">
+                    <div class="description">
+                        <h4>Hotel name</h4><br>
+                        <p class="dp">This hotel is located in Rwanda - Kigali City. <br> It very good with handling customers.</p>
+                        <img src="./Screenshot 2023-07-24 214503.png" alt="" class="type-2">
+                        <caption>350 K</caption>&nbsp;&nbsp;&nbsp;
+                        <img src="./Screenshot 2023-07-24 214518.png" alt="" class="type-2">
+                        <caption>350 K</caption><br>
+                        <p class="dp2"><span>100+</span> visited last week</p>
+                        <button>Visit</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="./Screenshot 2023-07-24 214805.png" alt="" class="type-1">
+                    <div class="description">
+                        <h4>Hotel name</h4><br>
+                        <p class="dp">This hotel is located in Rwanda - Kigali City. <br> It very good with handling customers.</p>
+                        <img src="./Screenshot 2023-07-24 214503.png" alt="" class="type-2">
+                        <caption>350 K</caption>&nbsp;&nbsp;&nbsp;
+                        <img src="./Screenshot 2023-07-24 214518.png" alt="" class="type-2">
+                        <caption>350 K</caption>
+                        <p class="dp2"><span>100+</span> visited last week</p>
+                        <button>Visit</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="./Screenshot 2023-07-24 214823.png" alt="" class="type-1">
+                    <div class="description">
+                        <h4>Hotel name</h4><br>
+                        <p class="dp">This hotel is located in Rwanda - Kigali City. <br> It very good with handling customers.</p>
+                        <img src="./Screenshot 2023-07-24 214503.png" alt="" class="type-2">
+                        <caption>350 K</caption>&nbsp;&nbsp;&nbsp;
+                        <img src="./Screenshot 2023-07-24 214518.png" alt="" class="type-2">
+                        <caption>350 K</caption>
+                        <p class="dp2"><span>100+</span> visited last week</p>
+                        <button>Visit</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="./Screenshot 2023-07-24 214844.png" alt="" class="type-1">
+                    <div class="description">
+                        <h4>Hotel name</h4><br>
+                        <p class="dp">This hotel is located in Rwanda - Kigali City. <br> It very good with handling customers.</p>
+                        <img src="./Screenshot 2023-07-24 214503.png" alt="" class="type-2">
+                        <caption>350 K</caption>&nbsp;&nbsp;&nbsp;
+                        <img src="./Screenshot 2023-07-24 214518.png" alt="" class="type-2">
+                        <caption>350 K</caption>
+                        <p class="dp2"><span>100+</span> visited last week</p>
+                        <button>Visit</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="./Screenshot 2023-07-24 214908.png" alt="" class="type-1">
+                    <div class="description">
+                        <h4>Hotel name</h4><br>
+                        <p class="dp">This hotel is located in Rwanda - Kigali City. <br> It very good with handling customers.</p>
+                        <img src="./Screenshot 2023-07-24 214503.png" alt="" class="type-2">
+                        <caption>350 K</caption>&nbsp;&nbsp;&nbsp;
+                        <img src="./Screenshot 2023-07-24 214518.png" alt="" class="type-2">
+                        <caption>350 K</caption>
+                        <p class="dp2"><span>100+</span> visited last week</p>
+                        <button>Visit</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="./Screenshot 2023-07-24 214716.png" alt="" class="type-1">
+                    <div class="description">
+                        <h4>Hotel name</h4><br>
+                        <p class="dp">This hotel is located in Rwanda - Kigali City. <br> It very good with handling customers.</p>
+                        <img src="./Screenshot 2023-07-24 214503.png" alt="" class="type-2">
+                        <caption>350 K</caption>&nbsp;&nbsp;&nbsp;
+                        <img src="./Screenshot 2023-07-24 214518.png" alt="" class="type-2">
+                        <caption>350 K</caption>
+                        <p class="dp2"><span>100+</span> visited last week</p>
+                        <button>Visit</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="load">
+                <button class="get-started">Load more</button>
+            </div>
+
+            <div class="info">
+                <div class="info-1">
+                    <h4>Hotels</h4>
+                    <ul>
+                        <li>Mariot hotel</li>
+                        <li>Hotel name</li>
+                        <li>Hotel name</li>
+                        <li>Hotel name</li>
+                        <li>Hotel name</li>
+                        <li>Hotel name</li>
+                        <li>Hotel name</li>
+                        <li>Hotel name</li>
+                        <li>Hotel name</li>
+                        <li>Hotel name</li>
+                    </ul>
+                </div>
+                <div class="info-1">
+                    <h4>Sites</h4>
+                    <ul>
+                        <li>Volcano National ParkParis at Huye</li>
+                        <li>Rususmo water fall</li>
+                        <li>Akagera National Park</li>
+                        <li>Nyungwe Forest</li>
+                        <li>Gishwati Forest</li>
+                        <li>Lake Kivu</li>
+                        <li>Genocide Memorial Sites</li>
+                        <li>Ministries</li>
+                        <li>Offices</li>
+                    </ul>
+                </div>
+                <div class="info-1">
+                    <h4>Cities</h4>
+                    <ul>
+                        <li>Kigali</li>
+                        <li>Huye</li>
+                        <li>Nyagatare</li>
+                        <li>Muhanga</li>
+                        <li>Musanze</li>
+                        <li>Rwamagana</li>
+                    </ul>
+                </div>
+                <div class="info-1">
+                    <form action="#">
+                        <label for="language">
+                            <select name="language" id="language">
+                                <option value="lang">Language</option>
+                                <option value="french">French</option>
+                                <option value="English">english</option>
+                                <option value="kinya">Kinyarwanda</option>
+                            </select>
+                        </label>
+                        <br>
+                        <label for="payment">
+                            <select name="payment" id="payment">
+                            <option value="paypal">PayPal</option>
+                            <option value="credit">Credit card</option>
+                            <option value="master">Master Card</option>
+                            <option value="visa">Visa</option>
+                        </select>
+                        </label>
+                    </form>
+                </div>
+            </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>&copy;2023 HK Limited Toursite</p>
+            
+        </div>
+        <div class="footer-image">
+            <img src="./Screenshot 2023-07-25 060644.png" alt="">
+            <img src="./Screenshot 2023-07-25 060659.png" alt="">
+            <img src="./Screenshot 2023-07-25 060719.png" alt="">
+            <img src="./Screenshot 2023-07-25 060732.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>

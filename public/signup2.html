@@ -1,0 +1,413 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head> 
+    Your head content here
+</head>
+<body>
+    <div class="all">
+        Your signup1.html content here
+        <div class="form">
+            <form action="http://localhost:4000/auth/register" method="post" id="signup-form">
+                Your form fields here
+            <input type="button" name="submit" value="Next Step" class="input5" id="next-step-button"> 
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sign1.css">
+    <title>sign up</title>
+</head>
+<body>
+    <div class="all">
+        <div class="header">
+        <a href="./homepage.html"><h1 class="logo">TourSite</h1></a>
+        <img class="img1" src="./Group 31.png" alt="arrow">
+        <p class="p1">help</p>
+        </div>
+    <div class="body">
+        <p class="p2"> Meet Toursite!</p>
+        <p class="p3">Toursite is waiting from you .Join us now</p>
+        <div class="steps">
+            REMEMBER
+         </div>
+        <div class="form">
+            <form action="" method="post">
+                <p class="aspan">
+                    <span class="span1">Name</span>
+                    <span class="spa1">*</span>
+                </p><br>
+                <input class="input1" type="text" name="names" placeholder="John Doe">
+
+                <p class="bspan">
+                    <span class="span1">Email</span>
+                    <span class="spa1">*</span>
+                </p><br>
+                <input class="input2" type="email" name="email" placeholder="example@gmail.com">
+
+                <p class="cspan">
+                    <span class="span1">Phone</span>
+                    <span class="spa1">*</span>
+                </p><br>
+                <input class="input3" type="number" name="telephone" placeholder="+7853234123">
+                <p class="dspan">
+                    <span class="span1">Password</span>
+                    <span class="spa1">*</span>
+                </p><br>
+                <input class="input4" type="password" name="password" placeholder="example@gmail.com">
+                <a href="./sign2.html">
+                <input type="button" name="submit" value="Next Step"
+                class="input5"></a>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="right">
+       <button>
+        <img class="img3" src="./Group 32.png" alt="">
+        <p class="p4">Sign In</p>
+       </button>
+    </div> 
+    Your signup1.html specific JavaScript code here -->
+    <!-- <script> 
+        const nextStepButton = document.getElementById('next-step-button');
+        nextStepButton.addEventListener('click', async () => {
+            const form = document.getElementById('signup-form');
+            const formData = new FormData(form);
+            const userData = {
+                name: formData.get('names'),
+                email: formData.get('email'),
+                phone: formData.get('telephone'),
+                password: formData.get('password'),
+            };
+
+            try {
+                const response = await fetch('/signup', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(userData),
+                });
+
+                const data = await response.json();
+                if (data.success) {
+                    window.location.href = '/signup2'; // Redirect to the next step page
+                } else {
+                    console.error('Registration failed:', data.message);
+                }
+            } catch (error) {
+                console.error('Error occurred during registration:', error);
+            }
+        });
+    </script>
+</body>
+</html>  --> 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/login.css">  
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./Rectangle\ 12.png')no-repeat;
+    background-size: cover;
+    background-position: center; 
+     
+        
+        
+
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+}
+.logo{
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 3em;
+    color: #fff;
+    user-select: none;
+}
+.navigation{
+    display: flex;
+}
+.navigation .help-anchor{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.navigation .btnsign-popup{
+
+   width: 130px;
+   height: 50px;
+   background: transparent;
+   border: none;
+   outline: none;
+   border-radius:6px ;
+   cursor: pointer;
+   font-size: 1.1em;
+   color: #fff;
+   font-weight: 500;
+   margin-right: 800px;
+   transition: .5s;
+   backdrop-filter: blur(20px);
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   
+   
+}
+
+.help-anchor{
+    display: flex;
+    gap: 10px ;
+}
+.navigation .btnsign-popup:hover{
+    background: #fff;
+    color: #162916;
+
+}
+.wrapper{
+    color: #ffffff;
+    position: static;
+    width: 750px;
+    height: 100vh;
+    background: black;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    /* border-radius: 20px; */
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex   ;
+    justify-content: left;
+    align-items: center ;  
+    padding: 100px 100px; 
+
+}
+.input-box{
+    position: relative;
+    top: 90%;
+    width: 130%;
+    height: 50px;
+    border-bottom:2px solid black ;
+    margin:  30px 0px 30px;
+}
+
+.input-box label{
+
+    position: absolute;
+    top: -100%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -90px;
+}
+ 
+.input-box input{
+    position: absolute;
+    top: -150%;
+    width: 243%;
+    height: 100%;
+    background: black;
+    color: white;
+    border: 2px solid beige;
+    border-radius: 50px;
+    font-size: 1em;
+    color: gray;
+    font-weight: 600;
+    padding: 0 18px 0 ;
+
+    
+    
+}
+
+
+.form-box h2{
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    height: 200px;
+    
+    
+
+
+}
+.btn{
+    width: 315%;
+    height: 100%;
+    padding: 10px;
+    background:  #FC08C7;
+    color: #fff;
+    border: 2px solid gray;
+    border-radius: 50px;
+    outline: none;
+}
+.h2{
+    margin-top: 60px;
+    
+}
+
+
+</style>
+<body>
+   
+        <header>
+            <a href="./homepage.html" style="text-decoration: none;"><h2 class="logo">Tour<span style="color: #FC08C7;">Site</span></h2></a>
+            <nav class="navigation">
+                <a class="help-anchor" href="#"><img src="./IMG-20230725-WA0005.jpg" style="border-radius: 15px;" alt="No-img">help</a>
+               <a href="./loginpage" style="text-decoration: none;"><button class="btnsign-popup">  <img src="./IMG-20230725-WA0006.jpg" style="border-radius: 15px;" alt="No-img">Login</button></a> 
+            </nav>
+        </header>
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2 class="h2">Join Community</h2>
+            <form id="registerForm" method="POST">
+                <!-- <div class="input-box">
+                  <input type="text" required name="name">
+                  <label>Name</label>
+                </div>
+                <div class="input-box">
+                  <input type="email" required name="email">
+                  <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="tel" required name="phone">
+                    <label>Phone</label>
+                  </div>
+                  <div class="input-box">
+                    <input type="password" required name="password">
+                    <label>Password</label>
+                  </div> -->
+                  <div class="input-box">
+                    <input type="text" required name="mapAddress">
+                    <label>Address</label>
+                  </div>
+                  <div class="input-box">
+                    <input type="text" required name="city">
+                    <label>City</label>
+                  </div>
+                  <div class="input-box">
+                    <input type="text" required name="country">
+                    <label>Country</label>
+                  </div>
+                <button type="submit" class="btn">Next Step</button>
+              </form>
+                    
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>   
+ 
+<script>
+    // Fetch the form element using its ID
+    const form = document.getElementById("registerForm");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Fetch form data
+        const formData = new FormData(event.target);
+        // const name = formData.get("name");
+        // const email = formData.get("email");
+        // const phone=formData.get("phone");
+        // const password=formData.get("password");
+        const mapAddress=formData.get("mapAddress");
+        const city=formData.get("city");
+        const country=formData.get("country");
+
+        // Prepare the data to be sent to the API
+        const dataToSend = {
+            // name: name,
+            // email: email,
+            // phone:phone,
+            // password:password,
+            mapAddress:mapAddress,
+            city:city,
+            country:country
+        };
+
+        // Make an API request to send the data
+        fetch("http://localhost:4000/auth/updatelatest", {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dataToSend),
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Handle the API response if needed
+            if (data.message === 'Latest user data updated successfully') {
+                // Display the success message to the user
+                alert('Registration went well');
+
+                // You can perform further actions here, e.g., redirect the user to another page
+                window.location.href = '/signup_finish.html';}else {
+                // Handle other cases, such as incorrect login details
+                console.log(error)
+                alert('registration failed. Please try again.');
+            }
+            console.log("API Response:", data);
+            // You can perform further actions based on the API response here
+        })
+        .catch(error => {
+            // Handle errors if any
+            console.error("Error:", error);
+        });
+    });
+</script>
+</body>
+</html> 

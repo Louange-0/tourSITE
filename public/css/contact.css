@@ -1,0 +1,329 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Inter:wght@300&family=PT+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.sub-container{
+    background-color: #0C0C0C;
+    width: 100%;
+    height: 62.5px;
+    font-family: Inter-Regular, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+.sub-container h1{
+
+    width: 52.5px;
+    height: 30px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 14.375px;
+    left: 62.5px;
+    font-size: 25px;
+}
+.a1{
+    width: 40.25px;
+    font-size: 15.625px;
+    height: 18.75px;
+    position: absolute;
+    top: 21.875px;
+    left: 406.5px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+.a2{
+    width: 71.25px;
+    font-size: 15.625px;
+    height: 18.75px;
+    position: absolute;
+    top: 21.875px;
+    left: 481.25px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.a3{
+    width: 61.25px;
+    font-size: 15.625px;
+    height: 18.75px;
+    position: absolute;
+    top: 21.875px;
+    left: 581.25px;
+    color: #FFFFFF;
+    text-decoration: none; 
+}
+.a4{
+    width: 61.25px;
+    font-size: 15.625px;
+    height: 18.75px;
+    position: absolute;
+    top: 21.875px;
+    left: 671.25px;
+    color: #FFFFFF;
+    text-decoration: none; 
+}
+a5{
+   
+  background-color: #000000;
+  border: 1px solid;
+  border-color: #161515;
+  border-radius: 10px;
+  height: 31.25px;
+  left: 956.26px;
+  position: absolute;
+  top: 15.625px;
+  width: 75px;
+} 
+.b1{
+   
+  background-color: #000000;
+  border: 1px solid;
+  border-color: #161515;
+  border-radius: 10px;
+  height: 31.25px;
+  left: 956.25px;
+  position: absolute;
+  top: 15.625px;
+  width: 75px;
+  color: #FFFFFF;
+  font-size: 15.625px;
+}
+.b2{
+  background-color: #000000;
+  border: 1px solid;
+  border-color: #161515;
+  border-radius: 10px;
+  height: 31.25px;
+  left: 1062.5px;
+  position: absolute;
+  top: 15.625px;
+  width: 75px;
+  color: #FFFFFF;
+  font-size: 15.625px;
+}
+.more{
+    font-family:  Inter-Regular, Helvetica, Arial, sans-serif;
+    /* font-size: "Inria Sans-Regular", helvetica, arial, sans; */
+}
+.more .getintouch{
+    font-size: 37.5px;
+    font-weight: 400;
+    position: absolute;
+    left: 187.5px;
+    top: 125px;
+    width: 157.5px;
+}
+.get{
+    color: #FFFFFF;
+    font-family: Inter-Regular, Helvetica, Arial, sans-serif;
+}
+.touch{
+    color: #fc08c7;
+    font-family: Inter-Regular, Helvetica, Arial, sans-serif;
+}
+.p1{
+    color: #FFFFFF;
+    font-family: Inter-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15.625px;
+    position: absolute;
+    left: 187.5px;
+    top: 235px;
+    width: 796.25px;
+}
+.p2{
+    color: #fc08c7;
+    font-family: Inter-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15.625px;
+    position: absolute;
+    left: 187.5px;
+    top: 336.25px;
+}
+ .overlap-3 {
+  background-color: #070707;
+  border: 5px solid;
+  border-color: #d3d3d3;
+  border-radius: 20px;
+  height: 62.5px;
+  left: 187.5px;
+  position: absolute;
+  top: 386.875px;
+  width: 375px;
+}
+
+.img-2 {
+  height: 37.5px;
+  left: 25px;
+  position: absolute;
+  top: 8.125px;
+  width: 37.5px;
+}
+
+.text-wrapper-41 {
+  color: #ffffff;
+  font-family:  Inter-Regular, Helvetica, Arial, sans-serif;
+  font-size: 18.125px;
+  font-weight: 400;
+  left: 101.875px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 16.875px;
+}
+
+.overlap-4 {
+  background-color: #070707;
+  border: 5px solid;
+  border-color: #d3d3d3;
+  border-radius: 20px;
+  height: 62.5px;
+  left: 575px;
+  position: absolute;
+  top: 386.875px;
+  width: 375px;
+}
+
+.instagram {
+  height: 37.5px;
+  left: 26.25px;
+  position: absolute;
+  top: 9.375px;
+  width: 37.5px;
+}
+
+.overlap-5 {
+  background-color: #070707;
+  border: 5px solid;
+  border-color: #d3d3d3;
+  border-radius: 20px;
+  height: 62.5px;
+  left: 187.5px;
+  position: absolute;
+  top: 482.5px;
+  width: 375px;
+}
+
+.text-wrapper-42 {
+  color: #ffffff;
+  font-family:  Inter-Regular, Helvetica, Arial, sans-serif;
+  font-size: 18.125px;
+  font-weight: 400;
+  left: 101.875px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 15px;
+}
+
+.overlap-6 {
+  background-color: #070707;
+  border: 5px solid;
+  border-color: #d3d3d3;
+  border-radius: 20px;
+  height: 62.5px;
+  left: 575px;
+  position: absolute;
+  top: 482.5px;
+  width: 375px;
+}
+
+.linkedin {
+  height: 37.5px;
+  left: 26.5px;
+  position: absolute;
+  top: 10px;
+  width: 37.5px;
+}
+
+.overlap-7 {
+  border-radius: 15px;
+  height: 312.5px;
+  left: 350px;
+  position: absolute;
+  top: 726.875px;
+  width: 500px;
+}
+.or-you-can-type-your {
+    color: #ffffff;
+    font-family: "Kokoro-Regular", Helvetica;
+    font-size: 18.125px;
+    font-weight: 400;
+    left: 218.75px;
+    position: absolute;
+    text-align: center;
+    top: 610px;
+    width: 750px;
+}
+.form{
+    border-radius: 15px;
+    border: 5px solid ;
+    border-color: #d3d3d3;
+    height: 312.5px;
+    left: 350px;
+    position: absolute;
+    top: 726.827px;
+    width: 500px;
+}
+.submit{
+    background-color: #fc08c7;
+    border-radius: 5px;
+    height: 43.75px;
+    left: 63.75px;
+    position: absolute;
+    top: 233.75px;
+    width: 375px;
+    color: #ffffff;
+    font-size: 15px;
+}
+.vector{
+    height: 18.75px;
+  left: 302.5px;
+  position: absolute;
+  top: 246.25px;
+  width: 18.75px;
+}
+#email{
+    background-color: #ffffff;
+    border: 5px solid;
+    border-color: #d3d3d3;
+    border-radius: 20px;
+    height: 62.25px;
+    left: 63.75px;
+    position: absolute;
+    top: 21.875px;
+    width: 375px;
+    color: #a1a1a1;
+    font-size: 18.125px;
+    font-family:  "Kokoro-Regular", Helvetica;
+    padding-left: 62.5px;
+}
+#message{
+    background-color: #ffffff;
+    border: 5px solid;
+    border-color: #d3d3d3;
+    border-radius: 20px;
+    height: 125px;
+    left: 63.75px;
+    position: absolute;
+    top: 96.875px;
+    width: 375px;
+    color: #a1a1a1;
+    font-family: "Kokoro-Regular", Helvetica;
+    font-size: 18.125px;
+    padding-left: 68.125px;
+    padding-top: 25px;
+}
+  .contact .text-wrapper-45 {
+    color: #a1a1a1;
+    font-family: "Kokoro-Regular", Helvetica;
+    font-size: 29px;
+    font-weight: 400;
+    left: 206px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 187px;
+  }

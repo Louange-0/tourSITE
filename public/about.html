@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .cont{
+    background: black;
+    width: 100vw;
+    height: 530vh;
+}
+.sub-container{
+  background-color: #0C0C0C;
+  width: 100%;
+  height: 62.5px;
+  font-family: Inter-Regular, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+.sub-container h1{
+  color: #FFFFFF;
+  position: absolute;
+  top: 14.375px;
+  left: 62.5px;
+  background: #0C0C0C;
+  font-size: 25px;
+}
+.sub-container h1 span{
+  color:#fc08c7;
+  background-color: #0C0C0C;
+}
+
+
+.sub-container a h1{
+
+  width: 100px;
+  height: 30px;
+  background-color: #0C0C0C;
+}
+.a1{
+  width: 40.25px;
+  font-size: 15.625px;
+  height: 18.75px;
+  position: absolute;
+  top: 21.875px;
+  left: 406.5px;
+  color:#FFFFFF;
+  text-decoration: none;
+  background: #0C0C0C;
+}
+.a2{
+  width: 71.25px;
+  font-size: 15.625px;
+  height: 18.75px;
+  position: absolute;
+  top: 21.875px;
+  left: 481.25px;
+  color: #fc08c7;
+  text-decoration: none;
+  background: #0C0C0C;
+}
+.a3{
+  width: 61.25px;
+  font-size: 15.625px;
+  height: 18.75px;
+  position: absolute;
+  top: 21.875px;
+  left: 581.25px;
+  color: #FFFFFF;
+  text-decoration: none; 
+  background: #0C0C0C;
+}
+.a4{
+  width: 61.25px;
+  font-size: 15.625px;
+  height: 18.75px;
+  position: absolute;
+  top: 21.875px;
+  left: 671.25px;
+  color: #FFFFFF;
+  text-decoration: none; 
+  background: #0C0C0C;
+}
+a5{
+ 
+  background: #0C0C0C;
+border: 1px solid;
+border-color: #161515;
+border-radius: 10px;
+height: 31.25px;
+left: 956.26px;
+position: absolute;
+top: 15.625px;
+width: 75px;
+
+} 
+
+.b1{
+ 
+background-color: #000000;
+border: 1px solid;
+border-color: #161515;
+border-radius: 10px;
+height: 31.25px;
+left: 956.25px;
+position: absolute;
+top: 15.625px;
+width: 75px;
+color: #FFFFFF;
+font-size: 15.625px;
+box-shadow: 2px 2px 2px 2px #fc08c7;
+}
+.b1:hover{
+ 
+  background-color:#fc08c7;
+  color: #0C0C0C;
+  box-shadow: none;
+}
+.b2{
+background-color: #000000;
+border: 1px solid;
+border-color: #161515;
+border-radius: 10px;
+height: 31.25px;
+left: 1062.5px;
+position: absolute;
+top: 15.625px;
+width: 75px;
+color: #FFFFFF;
+font-size: 15.625px;
+box-shadow: 2px 2px 2px 2px #fc08c7;
+}
+.b2:hover{
+  background-color:#fc08c7;
+  color: #0C0C0C; 
+  box-shadow: none;  
+}
+
+.tick-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .tick-list li {
+    position: relative;
+    padding-left: 30px; 
+    margin-bottom: 10px; 
+    color: white; 
+  }
+  
+  .tick-list li:before {
+    content: "\2713"; 
+    position: absolute;
+    left: 0;
+    top: 0px; 
+    font-size: 20px; 
+    color: rgb(13, 241, 161); 
+  }
+  .works{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+  .images{
+    width: 6rem;
+    border-radius: 50%;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    line-height: 2rem;
+    background: rgb(13, 13, 13);
+    border-radius: 1.3rem;
+
+  }
+  .info{
+    color: white;
+    margin: 5rem 9rem;
+
+  }
+  .sty-info{
+    color: rgb(232, 49, 220);
+  }
+  .desc {
+    list-style: none;
+    padding-left: 25px; 
+    display: flex;
+    align-items: center; 
+  }
+  
+  .desc::before {
+    content: "\2022"; 
+    color: rgb(13, 241, 161); 
+    margin-right: 10px; 
+    font-size: 30px;
+  }
+  .slidev{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .slidev button{
+    background: none;
+    width: 3rem;
+    height: 8vh;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .grid div{
+    background: rgb(13, 13, 13);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    border-radius: 1.3rem;
+    line-height: 2rem;
+  }
+  .grid div img{
+    width: 3rem;
+    border-radius: 50%;
+  }
+  .tailw-sty {
+    color: rgba(37, 195, 140, 0.671);
+  }
+  .testimonials {
+    margin-top: 2rem;
+
+  }
+
+  .testimonies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .testimony {
+    background: rgb(13, 13, 13);
+    width: 30vw;
+    padding: 2rem;
+    border-radius: 1.2rem;
+  }
+  .testimony::before { 
+    content: "\201c";
+    color: rgba(40, 230, 164, 0.671);
+    font-size: 8rem;
+  }
+  .user-prof{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .user-prof img{
+    width: 4rem;
+  height: 4rem;
+    border-radius: 50%;
+  }
+  blockquote{
+    margin-bottom: 2rem;
+  }
+  .more{
+    color: white;
+    background: rgb(13, 13, 13);
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    padding: 2rem;
+  }
+  .more div ul{
+    list-style-type: none;
+  }
+  .more div ul li{
+    padding-top: 2rem;
+  }
+  .more .select {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .select select{
+    padding: 0.5rem 1.5rem;
+    outline: none;
+    width: 15vw;
+    border-radius: 0.5rem;
+  }
+  .links{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    height: 20vh;
+  }
+  .icons{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  
+  }
+  .icon-items{
+    background: rgb(13, 13, 13);
+    border-radius: 50%;
+    width: 2rem;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  
+</style>
+<body>
+    <div class="cont">
+        <div class="sub-container">
+            <a href="./homepage.html"><h1>Tour<span>Site</span></h1></a>
+            <a class="a1" href="./homepage.html">Home</a>
+            <a class="a2" href="./index.html">About Us</a>
+            <a class="a3" href="./contact.html">Contact</a>
+            <a class="a4" href="./indexes.html">Booking</a>
+            
+            <a  href="/loginpage" class="a5">
+                <button class="b1">Login</button>
+            </a>
+            <a class="a6" href="/signup">
+                <button class="b2">Sign Up</button>
+            </a>
+        </div>
+    
+        <div class="info">
+            <h2>Know</h2>
+            <h3 class="sty-info" style="font-size: 30px;">About Us</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium placeat architecto soluta unde animi veritatis neque magnam ipsa rerum nisi pariatur aut assumenda accusamus in laboriosam atque, sed aliquam odio.</p>
+            <div style="margin-top: 2rem;">
+                <h3 class="sty-info">Mission and vision</h3>
+                <ul class="tick-list">
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, ad?</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, sapiente</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, non?</li>
+                </ul>
+    
+            </div>
+            <div style="margin-top: 2rem;">
+                <h4 class="sty-info"> Who works with us </h4>
+
+                <div class="works" style="margin-top: 2rem;">
+                    <div class="card">
+                        <img src="dove.jpeg" alt="" class="images">
+                        <h5 class="tailw-sty">Dove hotel</h5>
+                        <li class="desc">Hotel</li>
+                        <p>Dove hotel stands as an architectural masterpiece, seamlessly blending classical grandeur with modern design. Its façade, adorned with intricate details 
+                            and masterful craftsmanship, captures the essence of timeless elegance, leaving an indelible mark on the cityscape.</p>
+                    </div>
+                    <div class="card">
+                        <img src="mhotel.jpeg" alt="" class="images">
+                        <h5 class="tailw-sty">M hotel</h5>
+                        <li class="desc">Hotel</li>
+                        <p>Step into a realm of unparalleled luxury within M hotels's guest rooms and suites. Meticulously curated furnishings, handpicked artworks, and state-of-the-art 
+                            amenities create sanctuaries of comfort and style, where every corner tells a tale of opulence and sophistication.</p>
+                    </div>
+                    <div class="card">
+                        <img src="download.png" alt=""class="images">
+                        <h5 class="tailw-sty">Mariot Hotel</h5>
+                        <li class="desc">Hotel</li>
+                        <p>A symphony of flavors awaits within Mariot's dining establishments. From intimate candlelit dinners at the upscale restaurant to casual brunches infused with local ingredients, each culinary 
+                            creation is a masterpiece, tantalizing the palate and celebrating the art of gastronomy.</p>
+                    </div>
+                </div>
+                <div class="slidev">
+                        <button class="prev-btn">&lt;</button>
+                        <button class="next-btn">&gt;</button>
+                    
+                </div>
+
+
+                <div class="team">
+                    <p class="sty-info">Our team </p>
+
+                    <div class="grid">
+
+                        <div class="team-cont">
+                            <img src="bernice.png" alt="">
+                            <p class="tailw-sty">Bernice NIYONGIRA</p>
+                            <p>CEO of Toursite </p>
+                            <p>The visionary leader of the company, the CEO is responsible for setting the strategic direction, driving growth, and ensuring overall success. With a deep understanding of market trends and a knack for inspiring teams, the CEO steers the company towards its goals with unwavering determination.</p>
+                        </div>
+                        <div class="team-cont">
+                            <img src="keza.png" alt="">
+                            <p class="tailw-sty">Rolande KEZA</p>
+                            <p>CEO of Toursite </p>
+                            <p>The CRO is the technology architect, overseeing the company's technological development. With a keen eye for innovation, the CRO guides the creation and implementation of cutting-edge solutions, leveraging emerging technologies to enhance products and services while ensuring a robust and secure tech infrastructure.</p>
+                        </div>
+                        <div class="team-cont">
+                            <img src="jackson.png" alt="">
+                            <p class="tailw-sty">Jackson</p>
+                            <p>CFO of Toursite </p>
+                            <p>The CFO is the financial steward, managing the company's financial health and resources. Expertly balancing budgets, investments, and financial risks, the CFO provides strategic insights that enable informed decision-making, fostering stability and sustainable growth.
+
+                            </p>
+                        </div>
+                        <div class="team-cont">
+                            <img src="kelly.png" alt="">
+                            <p class="tailw-sty">Kerry kIRENGA</p>
+                            <p>CMO of Toursite </p>
+                            <p>As the company's storyteller, the CMO shapes its brand identity and market presence. Through strategic marketing campaigns and creative initiatives, the CMO engages audiences, builds brand loyalty, and drives revenue by effectively communicating the company's value proposition.
+
+                            </p>
+                        </div>
+                        <div class="team-cont">
+                            <img src="joie.png" alt="">
+                            <p class="tailw-sty">Joie Darlene</p>
+                            <p>COO of Toursite </p>
+                            <p>The COO ensures smooth day-to-day operations, optimizing processes for efficiency and effectiveness. With a focus on execution and coordination across departments, the COO enhances productivity and customer satisfaction, contributing to the company's seamless functioning.</p>
+                        </div>
+                        <div class="team-cont">
+                            <img src="grace.png" alt="">
+                            <p class="tailw-sty">Grace</p>
+                            <p>CHRO of Toursite </p>
+                            <p>The CHRO champions the company's most valuable asset – its people. By cultivating a positive work culture, developing talent, and fostering employee well-being, the CHRO drives engagement and empowers the workforce to achieve collective success.
+
+                            </p>
+                        </div>
+                        <div class="team-cont">
+                            <img src="grace.png" alt="">
+                            <p class="tailw-sty">ISHIMWE JUSTIN</p>
+                            <p>CEO of Toursite </p>
+                            <p>The CSO leads the company's sales strategy, forging and nurturing client relationships. With a sharp understanding of market dynamics, the CSO drives revenue growth, expanding the company's market share and ensuring its products and services reach their intended audiences.
+
+                        </p>
+                        </div>
+                        <div class="team-cont">
+                            <img src="lisa.png" alt="">
+                            <p class="tailw-sty">lisa Lounge</p>
+                            <p>CEO of Toursite </p>
+                            <p>The CIO manages the company's information technology and data systems. By implementing robust data security measures and driving technological innovation, the CIO enhances data-driven decision-making, enabling the company to adapt and thrive in a digital landscape.
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="testimonials">
+                    <p class="sty-info">Testimonials</p>
+                    <div class="testimonies" >
+                        <div class="testimony">
+                           <blockquote>
+                            This app has simplified my travel planning immensely. The ability to customize and save my preferences, such as seat choices and dietary restrictions, saves me time and hassle. It's evident that the developers understand the needs of modern travelers
+                           </blockquote> 
+
+                           <div class="user-prof">
+                            <img src="person2.jpeg" alt="">
+                            <div class="roles">
+                                <p>Harry poter</p>
+                                <p class="sty-info">President</p>
+                            </div>
+                           </div>
+                        </div>
+                        <div class="testimony">
+                           <blockquote>
+                            I'm not the most tech-savvy person, but this app is so user-friendly that even I can navigate it effortlessly. The step-by-step travel guides and language translation features have been a godsend in unfamiliar places. Highly recommended
+                           </blockquote> 
+                           <div class="user-prof">
+                            <img src="person1.jpg" alt="">
+                            <div class="roles">
+                                <p>JOHN</p>
+                                <p class="sty-info">President</p>
+                            </div>
+                           </div>
+                        </div>
+
+                    </div>
+
+                    <div class="slidev">
+                        <button class="prev-btn">&lt;</button>
+                        <button class="next-btn">&gt;</button>
+                    </div>
+                </div>
+            </div>
+           
+           
+        </div>
+
+
+        <div class="more">
+            <div>
+                <h1>Home</h1>
+                <ul>
+                    <li>Mariot Hotel</li>
+                    <li>Mariot Hotel</li>
+                    <li>Mariot Hotel</li>
+                    <li>Mariot Hotel</li>
+                    <li>Mariot Hotel</li>
+                    <li>Mariot Hotel</li>
+                    <li>Mariot Hotel</li>
+                    <li>Mariot Hotel</li>
+                    <li>Mariot Hotel</li>
+                </ul>
+            </div>
+            <div>
+                <h1>Sites</h1>
+                <ul>
+                    <li>Volcano national park</li>
+                    <li>Volcano national park</li>
+                    <li>Volcano national park</li>
+                    <li>Nyungwe forest</li>
+                    <li>Nyungwe forest</li>
+                    <li>Nyungwe forest</li>
+                    <li>Nyungwe forest</li>
+                    <li>Nyungwe forest</li>
+                    <li>Nyungwe forest</li>
+                </ul>
+            </div>
+            <div>
+                <h1>Cities</h1>
+                <ul>
+                    <li>Kigali</li>
+                    <li>Huye</li>
+                    <li>Nyagatare</li>
+                    <li>Muhanga</li>
+                    <li>Musanze</li>
+                    <li>Rwamagana</li>
+                </ul>
+            </div>
+
+            <div class="select">
+                <select name="options"  id="opt">
+                    <option value="Language">Language</option>
+                    <option value="Language">English</option>
+                    <option value="Language">French</option>
+                </select>
+                <select name="options" id="opt">
+                    <option value="pay-form">Payment Form</option>
+                    <option value="pay-form">VISA</option>
+                    <option value="pay-form">Payment Form</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="links">
+            <div>
+                <p>&copy; 2023 Toursite HK Limited</p>
+            </div>
+
+            <div class="icons">
+                <div class="icon-items"> <p><i class="fab fa-twitter"></i></p></div>
+                <div class="icon-items"> <p><i class="fab fa-instagram"></i></p></div>
+                <div class="icon-items"> <p><i class="fab fa-facebook"></i></p></div>
+                <div class="icon-items"> <p><i class="fab fa-linkedin"></i></p></div>
+              
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
