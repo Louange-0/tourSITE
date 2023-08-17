@@ -447,7 +447,7 @@ input{
         };
 
         // Make an API request to send the data
-        fetch("http://localhost:4000/tours", {
+        fetch("https://toursite12.onrender.com/tours", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -472,7 +472,7 @@ input{
         })
         .catch(error => {
             // Handle errors if any
-            console.error("Error:", error);
+            console.log("Error:", error);
         });
 
     });
